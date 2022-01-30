@@ -1,0 +1,44 @@
+@import "/styles/variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: $mainColor;
+  box-shadow: 0 1px 0 #14171d;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+
+  li {
+    margin: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

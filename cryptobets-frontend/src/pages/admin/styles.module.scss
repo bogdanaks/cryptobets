@@ -1,0 +1,40 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.testCreateMatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 600px;
+  border: 1px solid rgba(38, 105, 245, 0.3);
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+.buttonsBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttonAction {
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #2669F5;
+  color: #f5f5f5;
+  border-radius: 2px;
+}

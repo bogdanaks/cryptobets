@@ -1,0 +1,41 @@
+@import "styles/variables";
+
+.wrapper {
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+
+  &__tab {
+    margin: 0 20px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+    &.active {
+      background-color: $blue;
+      border-radius: 3px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.emptyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 55px);
+}

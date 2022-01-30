@@ -1,0 +1,74 @@
+@import "styles/variables";
+
+.ordersBlock {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__coef {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+}
+
+.amountBlock {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &__label {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    width: 100%;
+    background: rgb(32, 46, 73);
+    box-shadow: rgb(9 22 46) 0 6px 12px 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    &:focus {
+      border: 1px solid rgba(38, 105, 245, 0.5);
+    }
+  }
+}
+
+.commonBlock {
+  display: flex;
+  flex-direction: column;
+
+  &__pay, &__won {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.payBtn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: $blue;
+  color: $white;
+  border-radius: 3px;
+  font-size: 16px;
+}

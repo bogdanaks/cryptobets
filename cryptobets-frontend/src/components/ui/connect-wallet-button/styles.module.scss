@@ -1,0 +1,56 @@
+@import "styles/variables";
+
+.connectBtn {
+  border-radius: 2px;
+  display: block;
+  font-weight: 700;
+  line-height: normal;
+  min-width: 60px;
+  padding: 0 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $blue;
+  color: $white;
+  margin-left: auto;
+  height: 100%;
+}
+
+.connectedBlock {
+  margin-left: auto;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid #14171d;
+  box-shadow: 0 1px 0 #14171d;
+  padding: 5px 10px;
+  position: relative;
+
+  .showContainer {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 999;
+    border-radius: 12px;
+    background-color: rgb(14, 28, 55);
+    min-width: 200px;
+    padding: 10px 0;
+    display: none;
+
+    &.isShow {
+      display: flex;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .disconnectLi {
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  }
+}

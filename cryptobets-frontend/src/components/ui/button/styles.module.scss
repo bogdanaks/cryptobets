@@ -1,0 +1,16 @@
+@import "styles/variables";
+
+.connectBtn {
+  border-radius: 2px;
+  display: block;
+  font-weight: 700;
+  line-height: normal;
+  min-width: 60px;
+  padding: 0 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $blue;
+  color: $white;
+  height: 45px;
+}

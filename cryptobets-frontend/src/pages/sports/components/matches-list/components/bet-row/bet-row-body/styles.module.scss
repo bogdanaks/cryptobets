@@ -1,0 +1,50 @@
+@import "../../../../../../../../styles/variables";
+
+.wrapper {
+  background-color: $secondColor;
+  box-shadow: 0 1px 0 #14171d;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.rowHead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  user-select: none;
+
+  &__team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+  }
+
+  &__vs {
+    width: 2%;
+  }
+}
+
+.containerBets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.wonBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: $mainColor;
+  color: $white;
+  border-radius: 5px;
+
+  &__title {
+    margin-bottom: 3px;
+  }
+}

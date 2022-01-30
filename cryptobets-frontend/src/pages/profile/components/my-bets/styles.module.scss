@@ -1,0 +1,98 @@
+@import "styles/variables";
+
+.wrapper {
+  display: grid;
+  padding: 20px 0;
+  user-select: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.matchWrapper {
+  background-color: $secondColor;
+  border-radius: 3px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 10px 15px;
+
+    &__title {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__betsList {
+    &__label {
+      display: flex;
+      opacity: 0.7;
+      margin: 10px 15px 0;
+    }
+    &__li {
+      padding: 5px 15px;
+    }
+  }
+
+  .withdrawBlock {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+    margin-top: auto;
+
+    &__ul {
+      height: 100%;
+    }
+
+    &__wonAmount {
+      padding: 10px 15px;
+    }
+  }
+}
+
+.buttonWithdrawBlock {
+  display: flex;
+  margin-top: auto;
+}
+
+.buttonWithdraw {
+  width: 100%;
+  margin-top: 20px;
+  opacity: 0.4;
+  cursor: default;
+
+  &.isActive {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.status0 {
+  color: rgba(255,255,255,0.3);
+}
+
+.status1 {
+  color: $blue;
+}
+
+.status2 {
+  color: $blue;
+}
+
+.status3 {
+  color: $blue;
+}
+
+.winSpan {
+  color: $green;
+}
+
+.lossSpan {
+  color: $red;
+}
+
+.betCategory {
+  opacity: 0.7;
+}

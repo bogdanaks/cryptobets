@@ -1,0 +1,29 @@
+@import "../../../../../../../../styles/variables";
+
+.wrapper {
+  height: 40px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $secondColor;
+  box-shadow: 0 1px 0 #14171d;
+  z-index: 2;
+
+  span {
+    user-select: none;
+  }
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 70%;
+}
+
+.nameBlock {
+  margin-left: 10px;
+}
+
